@@ -7,10 +7,8 @@ import { StepPage } from '../step-page';
   styleUrls: ['./step-page1.component.scss']
 })
 export class StepPage1Component implements OnInit, StepPage {
-
   constructor() { }
 
   ngOnInit() {
   }
-
 }

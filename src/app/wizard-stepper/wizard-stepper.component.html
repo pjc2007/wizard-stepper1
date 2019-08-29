@@ -1,15 +1,7 @@
 <mat-horizontal-stepper #stepper>
-  <mat-step>
-    Step 1
-  </mat-step>
-  <mat-step>
-    Step 2
-  </mat-step>
-  <mat-step>
-    Step 3
-  </mat-step>
-  <!-- one option -->
-
+  <mat-step *ngFor='let step of steps'>
+    <app-step-page-wrapper item='step'></app-step-page-wrapper>
+  </mat-step>     
 </mat-horizontal-stepper>
 
 <!-- second option -->

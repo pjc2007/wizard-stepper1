@@ -8,6 +8,8 @@ import { MatStepperModule, MatInputModule, MatButtonModule, MatAutocompleteModul
 import { StepPage1Component } from './step-page1/step-page1.component';
 import { StepPage2Component } from './step-page2/step-page2.component';
 import { StepPage3Component } from './step-page3/step-page3.component';
+import { PageDirective } from './page.directive';
+import { StepPageWrapperComponent } from './step-page-wrapper/step-page-wrapper.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { StepPage3Component } from './step-page3/step-page3.component';
     WizardStepperComponent,
     StepPage1Component,
     StepPage2Component,
-    StepPage3Component
+    StepPage3Component,
+    PageDirective,
+    StepPageWrapperComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +30,14 @@ import { StepPage3Component } from './step-page3/step-page3.component';
     MatAutocompleteModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    StepPage1Component,
+    StepPage2Component,
+    StepPage3Component,
+    StepPageWrapperComponent
+  ]
+
+  
 })
 export class AppModule { }
